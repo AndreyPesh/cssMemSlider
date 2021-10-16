@@ -66,3 +66,42 @@ p{
   color: #d3d3d3;
 }
 
+.wrapper .navigation {
+  padding: 10px 0;
+	display: inline-flex;
+  justify-content: flex-end;
+	width: 50%;
+	text-align: center;
+}
+.wrapper .navigation > a {
+	display: inline-flex;
+  align-items: center;
+  justify-content: center;
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation > a .dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: rgb(145, 144, 151);
+  border: 2px solid rgb(223, 220, 236);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.navigation > a + a .dot{
+  background: rgba(32, 33, 36, 0.5);
+}
+
+.navigation > a:hover .dot{
+  background: rgba(145, 144, 151, 0.6);
+}
+
+.navigation > a:active .dot{
+  transform: scale(0.8);
+}
+
