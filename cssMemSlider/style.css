@@ -54,7 +54,7 @@ p{
   padding-top: 10px;
   white-space: nowrap;
   width: 100%;
-  transition: 0.4s;
+  transition: 0.8s;
   font-size: 0;
 }
 
@@ -139,5 +139,21 @@ p{
 }
 
 #slide4:target ~ .slides-wrapper {
+  transform: translateX(-300%);
+}
+
+#slide1:target ~ .description > .description-wrapper {
+  transform: translateX(0%);
+}
+
+#slide2:target ~ .description > .description-wrapper {
+  transform: translateX(-100%);
+}
+
+#slide3:target ~ .description > .description-wrapper {
+  transform: translateX(-200%);
+}
+
+#slide4:target ~ .description > .description-wrapper {
   transform: translateX(-300%);
 }
